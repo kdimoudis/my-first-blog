@@ -12,6 +12,16 @@
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
+        <h2>Composed by 
+            {% if post.composer %}
+                {{ post.composer }}
+            {% endif %}
+        </h2>
+        <h2>Recorded by 
+            {% if post.label %}
+                {{ post.label }}
+            {% endif %}
+        </h2>
         <p>
             {% if post.image %}
                 <img src="{{ post.image.url }}"/>
