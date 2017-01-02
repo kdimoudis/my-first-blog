@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 26pt;
+    text-decoration: none;
+}
+
+.content{
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+body {
+	color: #333333;
+	font-size: 14px;
+	line-height: 1.4em;
+	font-family: Georgia, serif;
+}
+
+h1 {
+	font-family: open-sans-condensed;
+	font-style: normal;
+	font-weight: 700;
+	color: #2F3694;
+	text-transform: uppercase;
+}
+
+nav ul {
+	width: 1200px;
+	list-style-type: none;
+	margin-bottom: 20px;
+	float: right;
+	background-color: #604445;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: #808080;
+	font-family: homenaje;
+	font-size: 25px;
+	line-height: 90px;
+	padding: 0 40px;
+	text-transform: uppercase;
+	display: block;
+	font-style: normal;
+	font-weight: 300;
+}
+
+header h1 {
+	color: #58ACFA;
+	font-size: 30px;
+}
+
+header h2 {
+	color: #424242;
+	font-size: 20px;
+}
+
+section h1 {
+	color: #58ACFA;
+	font-size: 20px;
+}
+
+section h2 {
+	color: #424242;
+	font-size: 20px;
+}
+
+#reviews {
+	padding-left: 160px;
+	color: #424242;
+	font-size: 22px;
+	text-transform: uppercase;
+	background-color: #ff9400;
+}
+
+.container {
+	width: 768px;
+}
+
+.column {
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.one-third {
+	width: 30.67%;
+}
+
+
+h2 {
+	font-size: 14px;
+}
+
+footer {
+	clear:both;
+}
+
+img {
+	width: 100%;
+}
+
+#middle {
+	background-color: #cccccc;
+}
+
+#down {
+	background-color: #cccccc;
+}
