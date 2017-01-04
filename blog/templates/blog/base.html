@@ -3,72 +3,10 @@
 <head>
     <title>kostis blog</title>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 </head>
-
 <body>
-<nav>
-  <div class="container">
-    <ul>
-      <li><a href="#events">Recent Events</a></li>
-      <li><a href="#">Donate</a></li>
-      <li><a href="#team">Our Team</a></li>
-      <li><a href="#biography">Biographies</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-  </ul>
-  </div>
-</nav>
-<section id="middle">
-<div class="container">
-  <header>
-    <h1>Serres Classical Music Magazine</h1>
-    <h2>Classical music reviews, <br>
-      Educating, <br>
-      Designing &amp; <br> 
-      Producing live local events <br>
-      Contact us...</h2>
-    <p>(The site is only for educational purposes and will be shut down after the end of the winter semester 2016-17)</p>
-  </header>
-</div>
-<div class="container">
-<section class="one-third column">
-  <h1 id="events">Recent Events</h1>
-  <p><img src="static/images/pic1.jpg" alt=""/></p>
-  <p>The famous pianist Paul Lewis joined the Thessaloniki State Symphony Orchestra. Paul Lewis is always amazing!</p>
-  <p><img src="static/images/pic2.jpg" alt=""/></p>
-  <p>The Blair String Quartet performed at the Elpida Hotel last summer. It was an amazing night.</p>
-  <p><img src="static/images/pic3.jpg" alt=""/></p>
-  <p>Nothing like the sound of violin. Hillary Hahn the violin legend of our time performed in Serres! Thanks to the Serres Classical Music Magazine!</p>
-  </section>
-<section class="one-third column">
-  <article>
-    <h1 id="team">Meet Our Team</h1>
-    <p>Our team of musicians, classical music lovers, journalists, and technical staff have been working together for over ten years. We have brought many quality reviews to the public and have contributed to designing and producing numerous live events.</p>
-  </article>
-  <article>
-    <h1>Our project</h1>
-    <p> The Serres Classical Music Magazine project is our latest and most ambitious project to date, but we have worked on similar projects in the past. Our award winning work has been featured in ERT documentaries and in other educational materials. Find out more about our projects... </p>
-  </article>
-  <article>
-    <h1>We need your help!</h1>
-    <p> Support our project now, or volunteer to help in other ways. To stay informed of the work we are doing and opportunities to get involved, sign up for our newsletter.</p>
-  </article>
-  </section>
-<section class="one-third column">
-  <h1 id="biography"> Biographies</h1>
-  <h2> Ludwig van Beethoven </h2>
-  <p> German composer Ludwig van Beethoven (1770 - 1827)is considered one of the most important figures in the history of music. <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven">Read more...</a></p>
-  <h2> Wunderkind Mozart</h2>
-  <p> Wolfgang Amadeus Mozart (1756 – 1791) was one of the most influential, popular and prolific composers of the classical period. He composed over 600 works, including some of the most famous and loved pieces of symphonic, chamber, operatic, and choral music. <a href="https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart">Read more...</a></p>
-  <h2>Spotlight on Richard Wagner</h2>
-  <p> Richard Wagner (1813 – 1883) Famous german composer who wrote epic operas such as the Der Ring des Nibelungen (The Ring of the Nibelung) <a href="https://en.wikipedia.org/wiki/Richard_Wagner">Read more...</a></p>
-  <h2>Photo of the Week</h2>
-  <p><img src="static/images/pic4.jpg" alt=""/></p>
- </section>
-</div>
-<h3 id="reviews"> Our recent reviews!</h3>
-</section>
 <section id="down">
 <div class="page-header">
     {% if user.is_authenticated %}

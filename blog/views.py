@@ -5,6 +5,10 @@ from .models import Post, Category, Composer, Label
 from .forms import PostForm
 from django.shortcuts import redirect
 
+
+def post_start(request):
+    return render(request, 'blog/post_start.html')   
+
 def post_list(request):
     cat=request.GET.get('cat','')
     try:
