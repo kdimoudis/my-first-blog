@@ -22,6 +22,32 @@ def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).filter(category=cat).order_by('-published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def post_list2(request):
+    lab=request.GET.get('lab','')
+    try:
+        lab=int(lab)
+    except:
+        lab=False
+
+    if (lab==False):
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    else:
+        posts = Post.objects.filter(published_date__lte=timezone.now()).filter(label=lab).order_by('-published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})    
+
+def post_list3(request):
+    comp=request.GET.get('comp','')
+    try:
+        comp=int(comp)
+    except:
+        comp=False
+
+    if (comp==False):
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    else:
+        posts = Post.objects.filter(published_date__lte=timezone.now()).filter(composer=comp).order_by('-published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})

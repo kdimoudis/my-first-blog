@@ -9,12 +9,12 @@
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <h2>Composed by 
                 {% if post.composer %}
-                    {{ post.composer }}
+                    <a href="{% url 'post_list3' %}?comp={{ post.composer_id }} ">{{ post.composer }}</a>
                 {% endif %}
             </h2>
             <h2>Recorded by 
                 {% if post.label %}
-                    {{ post.label }}
+                    <a href="{% url 'post_list2' %}?lab={{ post.label_id }} ">{{ post.label }}</a>
                 {% endif %}
             </h2>
             <p>
