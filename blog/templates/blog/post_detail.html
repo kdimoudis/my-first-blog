@@ -27,6 +27,19 @@
                 <img src="{{ post.image.url }}"/>
             {% endif %}
             {{ post.text|linebreaks }}
+        <h4>Rating 
+            {% if post.rating %}
+                {{ post.rating }}
+            {% endif %}
+        </h4>
+            {% if post.website %}
+                <h4>You can purchase the CD at <a href="{{ post.website }}">{{ post.website }}</a></h4> 
+            {% endif %}
+        <h4>Written by {{ post.author }}
+            {% if post.category %}
+                on <a href="{% url 'post_list' %}?cat={{ post.category_id }} ">{{ post.category }}</a>
+            {% endif %}
+        </h4>    
         </p>
         <p>Written by {{ post.author }}
             {% if post.category %}
